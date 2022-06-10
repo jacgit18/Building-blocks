@@ -7,6 +7,9 @@ import Counter from "./Component/Counter";
 import { FunctionClck, Classclck } from "./Component/FunctionClck";
 import EventBind from "./Component/EventBind";
 import ParentComponent from "./Component/ParentComponent";
+import UserGreeting from "./Component/UserGreeting";
+
+
 import React, { Component } from "react";
 
 class App extends Component {
@@ -38,6 +41,7 @@ class App extends Component {
             {/* <EventBind /> */}
 
             <ParentComponent />
+            <UserGreeting />
           </>
         </header>
       </div>
