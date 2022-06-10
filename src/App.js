@@ -1,10 +1,10 @@
-import logo from './logo.svg';
 import './App.css';
 // import Greet  from './Component/Greet'; // with default
 import {Greet}  from './Component/Greet'; // no default
 import Welcome from './Component/Welcome';
 import Messege from './Component/Messege';
 import Counter from './Component/Counter';
+import {FunctionClck, Classclck} from './Component/FunctionClck';
 
 
 import React, { Component } from 'react';
@@ -19,7 +19,7 @@ class App extends Component{
     <div className="App">
       <header className="App-header">
       <>
-      <Counter /> 
+      {/* <Counter /> 
 
       <Greet name="josh" alias="batman"/>
 
@@ -33,7 +33,13 @@ class App extends Component{
         </Welcome>
 
 
-      <Messege/>
+      <Messege/> */}
+
+      {/* Event Handling */}
+      <FunctionClck />
+      <Classclck />
+
+
 
       </>
       </header>
