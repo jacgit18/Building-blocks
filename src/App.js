@@ -1,25 +1,21 @@
-import './App.css';
+import "./App.css";
 // import Greet  from './Component/Greet'; // with default
-import {Greet}  from './Component/Greet'; // no default
-import Welcome from './Component/Welcome';
-import Messege from './Component/Messege';
-import Counter from './Component/Counter';
-import {FunctionClck, Classclck} from './Component/FunctionClck';
+import { Greet } from "./Component/Greet"; // no default
+import Welcome from "./Component/Welcome";
+import Messege from "./Component/Messege";
+import Counter from "./Component/Counter";
+import { FunctionClck, Classclck } from "./Component/FunctionClck";
+import EventBind from "./Component/EventBind";
+import ParentComponent from "./Component/ParentComponent";
+import React, { Component } from "react";
 
-
-import React, { Component } from 'react';
-
-
-
-
-class App extends Component{
-  
-  render(){
-  return (
-    <div className="App">
-      <header className="App-header">
-      <>
-      {/* <Counter /> 
+class App extends Component {
+  render() {
+    return (
+      <div className="App">
+        <header className="App-header">
+          <>
+            {/* <Counter /> 
 
       <Greet name="josh" alias="batman"/>
 
@@ -35,17 +31,17 @@ class App extends Component{
 
       <Messege/> */}
 
-      {/* Event Handling */}
-      <FunctionClck />
-      <Classclck />
+            {/* Event Handling */}
+            {/* <FunctionClck />
+      <Classclck /> */}
 
+            {/* <EventBind /> */}
 
-
-      </>
-      </header>
-    </div>
-  );
-}
-
+            <ParentComponent />
+          </>
+        </header>
+      </div>
+    );
+  }
 }
 export default App;
