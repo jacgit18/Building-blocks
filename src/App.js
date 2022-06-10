@@ -8,6 +8,7 @@ import { FunctionClck, Classclck } from "./Component/FunctionClck";
 import EventBind from "./Component/EventBind";
 import ParentComponent from "./Component/ParentComponent";
 import UserGreeting from "./Component/UserGreeting";
+import NameList from "./Component/NameList";
 
 
 import React, { Component } from "react";
@@ -42,6 +43,7 @@ class App extends Component {
 
             <ParentComponent />
             <UserGreeting />
+            <NameList />
           </>
         </header>
       </div>
