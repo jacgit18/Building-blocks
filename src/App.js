@@ -9,6 +9,11 @@ import EventBind from "./Component/EventBind";
 import ParentComponent from "./Component/ParentComponent";
 import UserGreeting from "./Component/UserGreeting";
 import NameList from "./Component/NameList";
+import Form from "./Component/Form";
+import ParentComp from './Component/ParentComp'
+import LifecycleA from "./Component/LifecycleA";
+
+
 
 
 import React, { Component } from "react";
@@ -40,10 +45,17 @@ class App extends Component {
       <Classclck /> */}
 
             {/* <EventBind /> */}
-
+{/* 
             <ParentComponent />
-            <UserGreeting />
-            <NameList />
+            <UserGreeting /> */}
+            {/* <NameList /> */}
+            {/* <Form /> */}
+            {/* <LifecycleA /> */}
+				<ParentComp />
+
+
+
+
           </>
         </header>
       </div>
