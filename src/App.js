@@ -1,4 +1,6 @@
 import "./App.css";
+import styles from './appStyles.module.css';
+
 // import Greet  from './Component/Greet'; // with default
 import { Greet } from "./Component/Greet"; // no default
 import Welcome from "./Component/Welcome";
@@ -10,9 +12,15 @@ import ParentComponent from "./Component/ParentComponent";
 import UserGreeting from "./Component/UserGreeting";
 import NameList from "./Component/NameList";
 import Form from "./Component/Form";
-import ParentComp from './Component/ParentComp'
+import ParentComp from "./Component/ParentComp";
 import LifecycleA from "./Component/LifecycleA";
-
+import RefsDemo from "./Component/RefsDemo";
+import FocusInput from './Component/FocusInput';
+import GetList from './Component/GetList';
+import PostForm from './Component/PostForm';
+import FRParentInput from './Component/FRParentInput';
+import Stylesheet from "./Component/Stylesheet";
+import {Inline} from "./Component/Inline";
 
 
 
@@ -45,15 +53,25 @@ class App extends Component {
       <Classclck /> */}
 
             {/* <EventBind /> */}
-{/* 
+            {/* 
             <ParentComponent />
             <UserGreeting /> */}
             {/* <NameList /> */}
             {/* <Form /> */}
             {/* <LifecycleA /> */}
-				<ParentComp />
+            {/* <ParentComp /> */}
+            {/* <RefsDemo /> */}
+            {/* <FocusInput /> */}
+            {/* <FRParentInput /> */}
 
 
+            
+            {/* <PostForm /> */}
+				   {/* <GetList /> */}
+           <Stylesheet primary={true}  />
+           <Inline  />
+            <h1 className="error"> error </h1>
+            <h1 className={styles.success}> succ </h1>
 
 
           </>
