@@ -92,13 +92,20 @@ import React, { Component } from 'react'
 
    }
 
+   incrementCount = () => {
+    this.setState(prevState => {
+      return { count: prevState.count + 1 }
+    })
+  }
+
+
   render() {
     return (
       <>
         <>Count - {this.state.count}</>
         <button onClick = {() =>this.changeCount() }> Increment</button>
         {/* <button onClick = {() =>this.multiStateChange() }> Increment</button> */}
-
+        {this.props.render(this.state.count, this.incrementCount)}
       </>
     )
   }
