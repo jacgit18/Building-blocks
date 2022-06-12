@@ -14,12 +14,12 @@ import ErrorBoundary from "./Component/ErrorBoundary";
 import FocusInput from "./Component/FocusInput";
 import FRParentInput from "./Component/FRParentInput";
 import { FunctionClck, Classclck } from "./Component/FunctionClck";
-import { Greet } from "./Component/Greet"; // no default export if default rm brackets on import
+import { FuctionalComp } from "./Component/FuctionalComp"; // no default export if default rm brackets on import
 import Hero from "./Component/Hero";
 import HoverCounter from "./Component/HoverCounter";
 import HoverCounterTwo from "./Component/HoverCounterTwo";
 import LifecycleA from "./Component/LifecycleA";
-import Messege from "./Component/Messege";
+import StateMessegeRender from "./Component/StateMessegeRender";
 import NameList from "./Component/NameList";
 import ParentComponent from "./Component/ParentComponent";
 import PureRegComp from "./Component/PureRegComp";
@@ -27,7 +27,7 @@ import PortalDemo from "./Component/PortalDemo";
 import RefsDemo from "./Component/RefsDemo";
 import UserGreeting from "./Component/UserGreeting";
 import { UserProvider } from "./Component/userContext";
-import Welcome from "./Component/Welcome";
+import ClasComp from "./Component/ClasComp";
 import GetList from "./Component/GetList";
 import PostForm from "./Component/PostForm";
 import React, { Component } from "react";
@@ -38,12 +38,12 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
           <>
-            {/* <Greet name="jack" alias="Homelander">
+            <FuctionalComp name="jack" alias="Homelander">
               <p> static Child tag</p>
-            </Greet>
+            </FuctionalComp>
 
-            <Welcome name="jimmy" alias="Black-noir" />
-            <Messege /> */}
+            <ClasComp name="jimmy" alias="Black-noir" />
+            <StateMessegeRender />
             
 
             {/* <Stylesheet primary={true} />
@@ -66,7 +66,7 @@ class App extends Component {
             {/* pass func to prop */}
             {/* <ParentComponent /> */}
 
-            {/* <PureRegComp /> */}
+            <PureRegComp />
 
             {/* order of execution */}
             {/* <LifecycleA /> */}

@@ -2,8 +2,8 @@ import React from "react";
 
 
 // instead of usng props you can destruct Props
-// export const Greet = ({name, alias, children}) => {
-    export const Greet = (props) => {
+// export const FuctionalComp = ({name, alias, children}) => {
+    export const FuctionalComp = (props) => {
 
     // alt way 
     const {name, alias, children} = props;

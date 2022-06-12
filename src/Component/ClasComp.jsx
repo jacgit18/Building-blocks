@@ -1,7 +1,6 @@
-
 import React, { Component } from 'react';
 
-export default class Welcome extends Component{
+export default class ClasComp extends Component{
  
 
   render(){

@@ -26,6 +26,8 @@ export default class PureRegComp extends Component {
 			<div>
 				<RegComp name={this.state.name} />
 				<PureComp name={this.state.name} />
+
+				{/* alt way and s HOC */}
 				{/* <MemoComp name={this.state.name} /> */}
 			</div>
 		)
