@@ -4,7 +4,7 @@ import UserContext from './userContext'
 
 
 
-export class ComponentE extends Component {
+export default class ComponentE extends Component {
 
 	static contextType = UserContext
 
@@ -20,4 +20,3 @@ export class ComponentE extends Component {
 
 // only works with class and only can subscribe to one context type
 // ComponentE.contextType = UserContext; //alt way
-export default ComponentE

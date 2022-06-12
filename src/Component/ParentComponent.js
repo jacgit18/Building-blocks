@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import ChildComponent from "./ChildComponent";
 // passing methods as props
 
-class ParentComponent extends Component {
+export default class ParentComponent extends Component {
   constructor(props) {
     super(props);
 
@@ -28,4 +28,3 @@ class ParentComponent extends Component {
   }
 }
 
-export default ParentComponent;

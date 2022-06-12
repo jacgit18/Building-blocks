@@ -1,12 +1,12 @@
 import React, { Component } from 'react'
  
 // conditional rendering can be done with if/else, element variables, ternary, & short circuit
-class UserGreeting extends Component {
+export default class UserGreeting extends Component {
   constructor(props) {
     super(props)
   
     this.state = {
-       isLoggedIn: false
+       isLoggedIn: true
     }
 
   }
@@ -59,4 +59,3 @@ return this.state.isLoggedIn && <>Welcome josh</>
   }
 }
 
-export default UserGreeting

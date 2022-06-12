@@ -2,7 +2,7 @@
 
 import React, { Component } from "react";
 
-class EventBind extends Component {
+export default class EventBind extends Component {
   constructor(props) {
     super(props);
 
@@ -47,4 +47,3 @@ class EventBind extends Component {
   }
 }
 
-export default EventBind;

@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import ComponentE from './ComponentE'
 
-export class ComponentC extends Component {
+export default class ComponentC extends Component {
 	render() {
 		return (
 			<div>
@@ -11,4 +11,4 @@ export class ComponentC extends Component {
 	}
 }
 
-export default ComponentC
+

@@ -3,7 +3,7 @@ import RegComp from './RegComp'
 import PureComp from './PureComp'
 import MemoComp from './MemoComp'
 
-class ParentComp extends Component {
+export default class PureRegComp extends Component {
 	constructor(props) {
 		super(props)
 
@@ -32,4 +32,3 @@ class ParentComp extends Component {
 	}
 }
 
-export default ParentComp

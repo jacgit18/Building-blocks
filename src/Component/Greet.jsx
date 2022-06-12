@@ -12,6 +12,7 @@ import React from "react";
       <h2>
         Hello {name} aka {alias}
       </h2>
+      {/* render nested tag */}
       {children}
       {/* {props.children} */}
 

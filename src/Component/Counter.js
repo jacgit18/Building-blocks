@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
- class Counter extends Component {
+export default class Counter extends Component {
    constructor(props){
      super(props)
 
@@ -100,10 +100,8 @@ import React, { Component } from 'react'
         <>Count - {this.state.count}</>
         <button onClick = {() =>this.changeCount() }> Increment</button>
         {/* <button onClick = {() =>this.multiStateChange() }> Increment</button> */}
-        {this.props.render(this.state.count, this.incrementCount)}
       </>
     )
   }
 }
 
-export default Counter

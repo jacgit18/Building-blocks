@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { UserConsumer } from './userContext'
 
-export class ComponentF extends Component {
+export default class ComponentF extends Component {
 	render() {
 		return (
 			<UserConsumer>
@@ -13,4 +13,3 @@ export class ComponentF extends Component {
 	}
 }
 
-export default ComponentF
