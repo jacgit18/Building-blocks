@@ -5,7 +5,7 @@ import styles from './appStyles.module.css';
 // import { Greet } from "./Component/Greet"; // no default
 // import Welcome from "./Component/Welcome";
 // import Messege from "./Component/Messege";
-import Counter from "./Component/Counter";
+// import Counter from "./Component/Counter";
 // import { FunctionClck, Classclck } from "./Component/FunctionClck";
 // import EventBind from "./Component/EventBind";
 // import ParentComponent from "./Component/ParentComponent";
@@ -31,6 +31,7 @@ import HoverCounterTwo from './Component/HoverCounterTwo'
 import ComponentC from './Component/ComponentC'
 import { UserProvider } from './Component/userContext'
 
+import CounterTwo from "./Component/CounterTwo";
 
 
 import React, { Component } from "react";
@@ -87,36 +88,98 @@ class App extends Component {
             {/* better to do espisically if your on a website like amazon
             and you have a lot products you dont wont to lose access to the whole pg
              but can be more dynamic just an example to get an idea of the context */}
-            <ErrorBoundary>
+            {/* <ErrorBoundary>
             <Hero heroName="Batman" />
             </ErrorBoundary>
 
 
             <ErrorBoundary>
             <Hero heroName="Joker" />
-            </ErrorBoundary>
+            </ErrorBoundary> */}
 
            
-            <Counter
+            {/* <Counter
 					render={(count, incrementCount) =>
 					<ClickCounterTwo
 						count={count}
 						incrementCount={incrementCount}>
 					</ClickCounterTwo>}>
-				</Counter>
+				</Counter> */}
         
 
-            <Counter
+            {/* <Counter
 					render={(count, incrementCount) =>
 					<HoverCounterTwo
 						count={count}
 						incrementCount={incrementCount}>
 					</HoverCounterTwo>}>
-				</Counter>
+				</Counter> */}
 
 
-			 <ClickCounter name='josh' /> 
-				 <HoverCounter /> 
+        {/* props will be sent to withcounter higherOrder func not ClickCounter  */}
+			 {/* <ClickCounter name='josh' /> 
+				 <HoverCounter />  */}
+          
+         {/* render prop pattern  */}
+
+
+         {/* <CounterTwo render = {(count,incrementCount) =>(
+          <ClickCounterTwo count={count}
+						incrementCount={incrementCount}
+
+            />
+            )} />
+
+<CounterTwo render = {(count,incrementCount) =>(
+          <HoverCounterTwo count={count}
+						incrementCount={incrementCount}
+
+            />
+            )} /> */}
+
+
+<CounterTwo>
+        {(count, incrementCount) =>(
+          <ClickCounterTwo count={count}
+						incrementCount={incrementCount}
+
+            />
+            )}
+
+         </CounterTwo>
+
+
+         <CounterTwo>
+        {(count, incrementCount) =>(
+          <HoverCounterTwo count={count}
+						incrementCount={incrementCount}
+
+            />
+            )}
+
+         </CounterTwo>
+
+
+
+
+
+
+          {/* <CounterTwo>
+
+          </CounterTwo> */}
+         {/* <ClickCounterTwo/> 
+				 <HoverCounterTwo />  */}
+
+
+      {/* context Api */}
+      {/* create provide consume context  */}
+         
+          <UserProvider value="josh">
+          <ComponentC/>
+
+
+          </UserProvider>
+
 
           </>
         </header>

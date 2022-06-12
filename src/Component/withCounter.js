@@ -22,6 +22,9 @@ const withCounter = (WrappedComponent, incrementNumber) => {
           count={this.state.count}
           incrementCount={this.incrementCount}
           {...this.props.name}
+		//   lets you see name in button
+		//   {...this.props}
+
 				/>
 			)
 		}
