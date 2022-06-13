@@ -1,0 +1,55 @@
+import React, { Component } from 'react'
+
+export default function StateLift() {
+
+    const [todos, setTodos] = React.useState(['item 1', 'item 2', 'item 3']);
+
+    return (
+      <>
+      < TodoCount todos={todos}/>
+      < TodoList todos={todos}/>
+      < AddTodo setTodos={setTodos}/>
+
+      </>
+    )
+  }
+
+
+
+
+ const TodoCount = ({ todos }) =>{
+return <>Total Todos: {todos.length}</>
+
+}
+
+ const TodoList = ({ todos })  =>{
+return (
+    <ul>
+        {todos.map((todo) =>(
+            <li key={todo}>{todo}</li>
+        ))}
+    </ul>
+)
+    
+}
+
+
+
+ const AddTodo = ({ setTodos }) =>{
+
+    function handleSubmit(event){
+        event.preventDefault();
+        const todo = event.target.elements.todo.value;
+
+        setTodos(prevTodos =>[...prevTodos, todo])
+    }
+
+    return(
+        <form onSubmit={handleSubmit}>
+        <input type="text" id="todo" />
+        <button type='submit'>Add Todo</button>
+        </form>
+
+    )
+}
+

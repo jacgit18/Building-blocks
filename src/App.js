@@ -20,6 +20,8 @@ import HoverCounter from "./Component/HoverCounter";
 import HoverCounterTwo from "./Component/HoverCounterTwo";
 import LifecycleA from "./Component/LifecycleA";
 import StateMessegeRender from "./Component/StateMessegeRender";
+import StateLift from "./Component/StateLift";
+
 import NameList from "./Component/NameList";
 import ParentComponent from "./Component/ParentComponent";
 import PureRegComp from "./Component/PureRegComp";
@@ -44,7 +46,8 @@ class App extends Component {
 
             <ClasComp name="jimmy" alias="Black-noir" />
             <StateMessegeRender />
-            
+            <StateLift />
+
 
             {/* <Stylesheet primary={true} />
             <Inline />
