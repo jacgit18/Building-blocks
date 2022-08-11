@@ -40,6 +40,11 @@ import {
 	HookCounterFour,
 } from "./Hooks/setStateHooker";
 
+import {
+	ClassCounterOneLifeCycleHooker,
+	useEffectHookCounterOne,
+} from "./Hooks/effectHooker";
+
 class App extends Component {
 	render() {
 		return (
@@ -152,6 +157,8 @@ class App extends Component {
 						<HookCounterThree /> */}
 
 						<HookCounterFour />
+						<ClassCounterOneLifeCycleHooker />
+						<useEffectHookCounterOne />
 					</>
 				</header>
 			</div>
