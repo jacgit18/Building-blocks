@@ -28,7 +28,7 @@ import PureRegComp from "./Component/PureRegComp";
 import PortalDemo from "./Component/PortalDemo";
 import RefsDemo from "./Component/RefsDemo";
 import UserGreeting from "./Component/UserGreeting";
-import { UserProvider } from "./Component/userContext";
+import UserContext, { UserProvider } from "./Component/userContext";
 import ClasComp from "./Component/ClasComp";
 import GetList from "./Component/GetList";
 import PostForm from "./Component/PostForm";
@@ -42,8 +42,17 @@ import {
 
 import {
 	ClassCounterOneLifeCycleHooker,
-	useEffectHookCounterOne,
+	UseEffectHookCounterOne,
+  ClassMouse,
+	HookMouse,
+  MouseContainer,
+  IntervalClassCounter,
+  IntervalHookCounter,
+  DataFetching
 } from "./Hooks/effectHooker";
+import {ContextHooker} from "./Hooks/useContext.js";
+
+
 
 class App extends Component {
 	render() {
@@ -51,13 +60,13 @@ class App extends Component {
 			<div className="App">
 				<header className="App-header">
 					<>
-						<FuctionalComp name="jack" alias="Homelander">
+						{/* <FuctionalComp name="jack" alias="Homelander">
 							<p> static Child tag</p>
 						</FuctionalComp>
 
 						<ClasComp name="jimmy" alias="Black-noir" />
 						<StateMessegeRender />
-						<StateLift />
+						<StateLift /> */}
 
 						{/* <Stylesheet primary={true} />
             <Inline />
@@ -78,13 +87,13 @@ class App extends Component {
 						{/* pass func to prop */}
 						{/* <ParentComponent /> */}
 
-						<PureRegComp />
+						{/* <PureRegComp /> */}
 
 						{/* order of execution */}
 						{/* <LifecycleA /> */}
 
 						{/* Conditional render */}
-						<UserGreeting />
+						{/* <UserGreeting /> */}
 
 						{/* <NameList /> */}
 
@@ -92,31 +101,31 @@ class App extends Component {
 						{/* <PostForm /> */}
 						{/* <GetList /> */}
 
-						<PortalDemo />
+						{/* <PortalDemo /> */}
 
 						{/* better to do espisically if your on a website like amazon
             and you have a lot products you dont wont to lose access to the whole pg
              but can be more dynamic just an example to get an idea of the context */}
-						<ErrorBoundary>
+						{/* <ErrorBoundary>
 							<Hero heroName="Batman" />
 						</ErrorBoundary>
 
 						<ErrorBoundary>
 							<Hero heroName="Joker" />
-						</ErrorBoundary>
+						</ErrorBoundary> */}
 
 						{/* context Api - create > provide > consume > context  */}
 
-						<UserProvider value="josh">
+						{/* <UserProvider value="josh">
 							<ComponentC />
-						</UserProvider>
+						</UserProvider> */}
 
 						{/* props will be sent to withcounter higherOrder func not ClickCounter  */}
-						<ClickCounter name="josh" />
-						<HoverCounter />
+						{/* <ClickCounter name="josh" />
+						<HoverCounter /> */}
 
 						{/* render prop pattern uncomment render in clickCountTwo to enable */}
-						<CountPropRender>
+						{/* <CountPropRender>
 							{(count, incrementCount) => (
 								<ClickCounterTwo
 									count={count}
@@ -132,7 +141,7 @@ class App extends Component {
 									incrementCount={incrementCount}
 								/>
 							)}
-						</CountPropRender>
+						</CountPropRender> */}
 
 						{/* <CountPropRender
               render={(count, incrementCount) => (
@@ -152,13 +161,27 @@ class App extends Component {
               )}
             /> */}
 
-						{/* <HookCounter />
-						<HookCounterTwo />
-						<HookCounterThree /> */}
+            {/* // HOOKS */}
 
-						<HookCounterFour />
-						<ClassCounterOneLifeCycleHooker />
-						<useEffectHookCounterOne />
+						 {/* <HookCounter />
+						<HookCounterTwo />
+						<HookCounterThree /> 
+						<HookCounterFour /> */}
+
+
+						{/* <ClassCounterOneLifeCycleHooker />
+						<UseEffectHookCounterOne /> */}
+            <ClassMouse />
+            {/* <HookMouse /> */}
+            {/* <MouseContainer />
+            <IntervalClassCounter /> */}
+            {/* <IntervalHookCounter /> */}
+
+            {/* <DataFetching />  */}
+           {/* <ContextHooker /> */}
+
+
+
 					</>
 				</header>
 			</div>
