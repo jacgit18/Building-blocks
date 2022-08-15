@@ -51,7 +51,7 @@ import {
   DataFetching
 } from "./Hooks/effectHooker";
 import {ContextHooker} from "./Hooks/useContext.js";
-
+import {UseReducerToUseContext} from "./Hooks/reducerWithUseContext.js";
 
 
 class App extends Component {
@@ -171,7 +171,7 @@ class App extends Component {
 
 						{/* <ClassCounterOneLifeCycleHooker />
 						<UseEffectHookCounterOne /> */}
-            <ClassMouse />
+            {/* <ClassMouse /> */}
             {/* <HookMouse /> */}
             {/* <MouseContainer />
             <IntervalClassCounter /> */}
@@ -180,7 +180,7 @@ class App extends Component {
             {/* <DataFetching />  */}
            {/* <ContextHooker /> */}
 
-
+            <UseReducerToUseContext />
 
 					</>
 				</header>
