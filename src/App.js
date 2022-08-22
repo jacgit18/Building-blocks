@@ -52,6 +52,8 @@ import {
 } from "./Hooks/effectHooker";
 import {ContextHooker} from "./Hooks/useContext.js";
 import {UseReducerToUseContext} from "./Hooks/reducerWithUseContext.js";
+import {UseCallbackHooker} from "./Hooks/useCallbackHooker.js";
+import {useMemoCounter} from "./Hooks/useMemo.js";
 
 
 class App extends Component {
@@ -181,6 +183,8 @@ class App extends Component {
            {/* <ContextHooker /> */}
 
             <UseReducerToUseContext />
+            <UseCallbackHooker />
+            <useMemoCounter />
 
 					</>
 				</header>
