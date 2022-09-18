@@ -4,7 +4,7 @@ import Button from './Memo/Button'
 import Title from './Memo/Title'
 
 // additional optimization to memo
-function UseCallbackHooker() {
+export function UseCallbackHooker() {
 	const [age, setAge] = useState(25)
 	const [salary, setSalary] = useState(50000)
 
@@ -27,4 +27,4 @@ function UseCallbackHooker() {
 	)
 }
 
-export default UseCallbackHooker
+ 

@@ -54,6 +54,9 @@ import {ContextHooker} from "./Hooks/useContext.js";
 import {UseReducerToUseContext} from "./Hooks/reducerWithUseContext.js";
 import {UseCallbackHooker} from "./Hooks/useCallbackHooker.js";
 import {useMemoCounter} from "./Hooks/useMemo.js";
+import {UseReduceRender} from "./Hooks/useReduceRender.js";
+import {ObjectUseState} from  "./Immutability/ObjectUseState.js"
+import {ArrayUseState} from  "./Immutability/ArrayUseState.js"
 
 
 class App extends Component {
@@ -182,9 +185,15 @@ class App extends Component {
             {/* <DataFetching />  */}
            {/* <ContextHooker /> */}
 
-            <UseReducerToUseContext />
+            {/* <UseReducerToUseContext />
             <UseCallbackHooker />
-            <useMemoCounter />
+            <useMemoCounter /> */}
+            <UseReduceRender />
+            <ObjectUseState />
+            <ArrayUseState />
+
+
+
 
 					</>
 				</header>
