@@ -1,6 +1,6 @@
 import React, { useState, useMemo } from 'react'
 
-function useMemoCounter() {
+export function UseMemoCounter() {
 	const [counterOne, setCounterOne] = useState(0)
 	const [counterTwo, setCounterTwo] = useState(0)
 
@@ -27,9 +27,9 @@ function useMemoCounter() {
 			</div>
 			<div>
         <button onClick={incrementTwo}>Count Two - {counterTwo}</button>
+        
 			</div>
 		</div>
 	)
 }
 
-export default useMemoCounter

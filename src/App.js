@@ -53,11 +53,18 @@ import {
 import {ContextHooker} from "./Hooks/useContext.js";
 import {UseReducerToUseContext} from "./Hooks/reducerWithUseContext.js";
 import {UseCallbackHooker} from "./Hooks/useCallbackHooker.js";
-import {useMemoCounter} from "./Hooks/useMemo.js";
+import {UseMemoCounter} from "./Hooks/useMemo.js";
 import {UseReduceRender} from "./Hooks/useReduceRender.js";
 import {ObjectUseState} from  "./Immutability/ObjectUseState.js"
 import {ArrayUseState} from  "./Immutability/ArrayUseState.js"
-
+import {Parent} from "./ParentChild/Parent.js"
+import {ParentOne} from "./ParentChildOptimization/ParentOne.js"
+import {ChildOne} from "./ParentChildOptimization/ChildOne.js"
+import {GrandParent} from "./ParentChildOptimization/GrandParent.js"
+import {ParentT} from "./WrongWaytoOptimize/ParentT"
+import {ParentFour} from "./WrongWaytoOptimize/ParentFour"
+import {ContextParent} from "./ContextRender/ContextParent.js"
+import { ChildA,  } from './ContextRender/ContextChildren'
 
 class App extends Component {
 	render() {
@@ -186,13 +193,32 @@ class App extends Component {
            {/* <ContextHooker /> */}
 
             {/* <UseReducerToUseContext />
-            <UseCallbackHooker />
-            <useMemoCounter /> */}
-            <UseReduceRender />
+             */}
+
+             {/* <UseCallbackHooker /> */}
+
+            {/* <UseReduceRender />
             <ObjectUseState />
-            <ArrayUseState />
+            <ArrayUseState /> */}
+            {/* <Parent /> */}
+
+            {/* 
+            <ParentOne>             
+              <ChildOne />
+            </ParentOne> */}
+
+            {/* <GrandParent /> */}
+            {/* <UseMemoCounter /> */}
+
+            {/* <ParentT /> */}
+            {/* <ParentFour /> */}
+            {/* <ContextParent /> */}
 
 
+            {/* Same Element Reference optimization for context */}
+            <ContextParent>
+              <ChildA />
+            </ContextParent>
 
 
 					</>
