@@ -6,3 +6,5 @@ export const ChildTwo = ({ name }) => {
 }
 // makes so child doesnt re render each time 
 export const MemoizedChildTwo = React.memo(ChildTwo)
+
+
